@@ -1,9 +1,10 @@
 (ns App
   (:require
    ["jotai" :as jotai :refer [useAtom]]
+   ["jotai-immer" :as jotai-immer :refer [atomWithImmer]]
    ["react" :refer [useState]]))
 
-(def !anime (jotai/atom
+(def !anime (atomWithImmer
              [{:title "Ghost in the Shell"
                :year 1995
                :watched true}
