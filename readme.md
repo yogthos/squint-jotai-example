@@ -6,13 +6,11 @@
 
 - Run `npx squint watch` to start compiling `.cljs` -> `.js`
 - Run `npx vite --config=vite.config.mjs public` to start a webserver and to hot-reload your project!
-
-## Babashka tasks
-To run both tasks above using one command with `bb dev`. See [bb.edn](bb.edn).
+- Run `npx run dev` to start both
 
 ## Production
 
 To build your production website:
 
-    npx vite build public
+    npx vite build
 

@@ -1,5 +1,0 @@
-{:tasks
- {dev:squint (shell "npx squint watch")
-  dev:vite (shell "npx vite --config=vite.config.mjs public")
-  -dev {:depends [dev:vite dev:squint]}
-  dev (run '-dev {:parallel true})}}
